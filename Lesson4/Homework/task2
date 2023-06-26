@@ -1,0 +1,28 @@
+<!-- Задача №2: создать БД, состоящую из одной таблицы (информация об одногруппниках) с четырьмя полями (добавить поле «Адрес»): id, name, age, address. -->
+
+<!-- таблица созданна из редактора  -->
+<!-- https://onecompiler.com/mysql -->
+
+
+-- create
+CREATE TABLE EMPLOYEE (
+  Id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age TEXT NOT NULL,
+  adress TEXT NOT NULL
+
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Иван', '18', 'Москва');
+INSERT INTO EMPLOYEE VALUES (0002, 'Петр', '22','Екатеринбург');
+INSERT INTO EMPLOYEE VALUES (0003, 'Анна', '35','Санкт-Петербург');
+INSERT INTO EMPLOYEE VALUES (0004, 'Юлия', '18','Санкт-Петербург');
+INSERT INTO EMPLOYEE VALUES (0005, 'Николай', '20','Санкт-Петербург');
+INSERT INTO EMPLOYEE VALUES (0006, 'Роман', '25','Москва');
+INSERT INTO EMPLOYEE VALUES (0007, 'Сергей', '21','Москва');
+INSERT INTO EMPLOYEE VALUES (0008, 'Ксения', '34','Минск');
+INSERT INTO EMPLOYEE VALUES (0009, 'Дарья', '36','Москва');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE age > '18';
